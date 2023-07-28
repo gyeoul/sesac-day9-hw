@@ -13,6 +13,13 @@
 		45FB2FF52A73A1B3006B9549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FB2FF32A73A1B3006B9549 /* Main.storyboard */; };
 		45FB2FF72A73A1B5006B9549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45FB2FF62A73A1B5006B9549 /* Assets.xcassets */; };
 		45FB2FFA2A73A1B5006B9549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45FB2FF82A73A1B5006B9549 /* LaunchScreen.storyboard */; };
+		45FB30022A73A24A006B9549 /* MovieInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB30012A73A24A006B9549 /* MovieInfo.swift */; };
+		45FB30042A73A26D006B9549 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB30032A73A26D006B9549 /* Movie.swift */; };
+		45FB30062A73A898006B9549 /* MovieInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB30052A73A898006B9549 /* MovieInfoTableViewCell.swift */; };
+		45FB300A2A73A945006B9549 /* MovieListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB30092A73A945006B9549 /* MovieListTableViewController.swift */; };
+		45FB30102A73B9A9006B9549 /* Goods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB300F2A73B9A9006B9549 /* Goods.swift */; };
+		45FB30142A73B9E9006B9549 /* GoodsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB30132A73B9E9006B9549 /* GoodsTableViewCell.swift */; };
+		45FB30162A73BBFD006B9549 /* ShoppingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45FB30152A73BBFD006B9549 /* ShoppingTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		45FB2FF62A73A1B5006B9549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		45FB2FF92A73A1B5006B9549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45FB2FFB2A73A1B5006B9549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45FB30012A73A24A006B9549 /* MovieInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfo.swift; sourceTree = "<group>"; };
+		45FB30032A73A26D006B9549 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		45FB30052A73A898006B9549 /* MovieInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieInfoTableViewCell.swift; sourceTree = "<group>"; };
+		45FB30092A73A945006B9549 /* MovieListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListTableViewController.swift; sourceTree = "<group>"; };
+		45FB300F2A73B9A9006B9549 /* Goods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goods.swift; sourceTree = "<group>"; };
+		45FB30132A73B9E9006B9549 /* GoodsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = GoodsTableViewCell.swift; path = "sesac-day9-hw/movie/GoodsTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		45FB30152A73BBFD006B9549 /* ShoppingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,8 @@
 		45FB2FEC2A73A1B3006B9549 /* sesac-day9-hw */ = {
 			isa = PBXGroup;
 			children = (
+				45FB300E2A73B996006B9549 /* shopping */,
+				45FB300D2A73B93F006B9549 /* movie */,
 				45FB2FED2A73A1B3006B9549 /* AppDelegate.swift */,
 				45FB2FEF2A73A1B3006B9549 /* SceneDelegate.swift */,
 				45FB2FF12A73A1B3006B9549 /* ViewController.swift */,
@@ -65,6 +81,27 @@
 				45FB2FFB2A73A1B5006B9549 /* Info.plist */,
 			);
 			path = "sesac-day9-hw";
+			sourceTree = "<group>";
+		};
+		45FB300D2A73B93F006B9549 /* movie */ = {
+			isa = PBXGroup;
+			children = (
+				45FB30092A73A945006B9549 /* MovieListTableViewController.swift */,
+				45FB30012A73A24A006B9549 /* MovieInfo.swift */,
+				45FB30032A73A26D006B9549 /* Movie.swift */,
+				45FB30052A73A898006B9549 /* MovieInfoTableViewCell.swift */,
+			);
+			path = movie;
+			sourceTree = "<group>";
+		};
+		45FB300E2A73B996006B9549 /* shopping */ = {
+			isa = PBXGroup;
+			children = (
+				45FB30132A73B9E9006B9549 /* GoodsTableViewCell.swift */,
+				45FB300F2A73B9A9006B9549 /* Goods.swift */,
+				45FB30152A73BBFD006B9549 /* ShoppingTableViewController.swift */,
+			);
+			path = shopping;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +177,14 @@
 			files = (
 				45FB2FF22A73A1B3006B9549 /* ViewController.swift in Sources */,
 				45FB2FEE2A73A1B3006B9549 /* AppDelegate.swift in Sources */,
+				45FB30102A73B9A9006B9549 /* Goods.swift in Sources */,
+				45FB30162A73BBFD006B9549 /* ShoppingTableViewController.swift in Sources */,
+				45FB30022A73A24A006B9549 /* MovieInfo.swift in Sources */,
+				45FB30142A73B9E9006B9549 /* GoodsTableViewCell.swift in Sources */,
 				45FB2FF02A73A1B3006B9549 /* SceneDelegate.swift in Sources */,
+				45FB30062A73A898006B9549 /* MovieInfoTableViewCell.swift in Sources */,
+				45FB300A2A73A945006B9549 /* MovieListTableViewController.swift in Sources */,
+				45FB30042A73A26D006B9549 /* Movie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +339,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +347,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.gyeoul.sesac-day9-hw";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,6 +371,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +379,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.gyeoul.sesac-day9-hw";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
